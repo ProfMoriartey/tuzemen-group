@@ -15,7 +15,7 @@ export default function FullWidthImage({
     <section className="relative h-[60vh] w-full md:h-[80vh]">
       <Image
         src={image}
-        alt={title || "Full Width"}
+        alt={title ?? "Full Width"}
         fill
         className="object-cover"
         priority

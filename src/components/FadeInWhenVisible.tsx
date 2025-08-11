@@ -20,13 +20,14 @@ export default function FadeInWhenVisible({
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        if (entry && entry.isIntersecting) {
+        if (entry?.isIntersecting) {
           setIsVisible(true);
           observer.disconnect();
         }
       },
       { threshold: 0.1 },
     );
+
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
