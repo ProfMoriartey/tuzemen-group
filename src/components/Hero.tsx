@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative isolate h-screen overflow-hidden p-8">
+    <section className="relative isolate h-screen overflow-hidden md:p-24">
       <Image
         src="/images/hero-fabrics.jpg"
         alt="Draped fabrics in natural light"
@@ -23,21 +23,6 @@ export function Hero() {
             Drapery, sheers, and upholstery crafted for homes, hotels, and
             projects.
           </p>
-
-          <div className="mt-8 flex gap-3">
-            <Link
-              href="#collections"
-              className="text-ink rounded-full bg-white px-5 py-3 hover:opacity-90"
-            >
-              View Collections
-            </Link>
-            <Link
-              href="#samples"
-              className="rounded-full border border-white px-5 py-3 text-white hover:bg-white/10"
-            >
-              Request Samples
-            </Link>
-          </div>
         </div>
       </div>
       {/* bottom fade to blend with next section */}
