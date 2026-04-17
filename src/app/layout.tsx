@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { Geist, Figtree } from "next/font/google";
 import { cn } from "~/lib/utils";
+import { Footer } from "~/components/footer";
 
 const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
 
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn(geist.variable, "font-sans", figtree.variable)}>
       <body>{children}</body>
+      
     </html>
   );
 }
