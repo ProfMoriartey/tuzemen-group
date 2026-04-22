@@ -43,7 +43,6 @@ export function OurBrands() {
     target: targetRef,
   })
 
-  // The clip-path expansion and exit
   const clipPath = useTransform(
     scrollYProgress,
     [0, 0.15, 0.85, 1],
@@ -55,23 +54,22 @@ export function OurBrands() {
     ]
   )
 
-  // Creates the "stopping areas" by holding values steady
-  // Format: [start, hold-end, next-start, hold-end...]
+  // Redistributed timing: Even 10% blocks for holding and moving
   const x = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.275, 0.325, 0.475, 0.525, 0.675, 0.725, 0.85, 1],
+    [0, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85, 1],
     ["0%", "0%", "0%", "-25%", "-25%", "-50%", "-50%", "-75%", "-75%", "-75%"]
   )
   
-  // Sync the background color shifts with the horizontal movements
+  // Sync the color shifts with the exact same timing blocks
   const backgroundColor = useTransform(
     scrollYProgress,
-    [0.15, 0.275, 0.325, 0.475, 0.525, 0.675, 0.725, 0.85],
+    [0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85],
     [
-      "#1B3B28", "#1B3B28", // Winbrella Green (Hold)
-      "#16325B", "#16325B", // Advantage Blue (Hold)
-      "#5B162B", "#5B162B", // La Luxe Red (Hold)
-      "#6B4412", "#6B4412", // Vanilla Home Gold (Hold)
+      "#1B3B28", "#1B3B28", 
+      "#16325B", "#16325B", 
+      "#5B162B", "#5B162B", 
+      "#6B4412", "#6B4412", 
     ] 
   )
 
@@ -88,7 +86,7 @@ export function OurBrands() {
   )
 
   return (
-    <section ref={targetRef} id="our-brands" className="relative h-[600vh] bg-background">
+    <section ref={targetRef} id="our-brands" className="relative h-[800vh] bg-background">
       <div className="sticky top-0 h-screen overflow-hidden">
         
         <div className="absolute inset-0 z-0 flex flex-col items-center justify-center bg-background px-4 text-center">

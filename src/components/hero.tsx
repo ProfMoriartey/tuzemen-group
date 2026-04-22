@@ -53,7 +53,7 @@ export function Hero() {
         <CarouselContent>
           {slides.map((slide) => (
             <CarouselItem key={slide.id}>
-              <div className="relative flex min-h-[80vh] items-center justify-center md:min-h-screen">
+              <div className="relative flex min-h-dvh items-center justify-center">
                 
                 <div className="absolute inset-0 z-0">
                   <Image
