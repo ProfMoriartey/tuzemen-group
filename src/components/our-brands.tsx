@@ -9,30 +9,34 @@ const brands = [
   {
     id: "brand-one",
     name: "Winbrella",
+    link: "https://www.winbrellafabrics.com/",
     description: "Premium cotton and natural fibers for everyday wear.",
     image1: "https://cdn.tuzemengroup.com/uploads/winbrella_sosyal_yeni_1_126_87d70ea499.JPG?w=1920&q=75",
     image2: "https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=1920&q=75",
   },
   {
     id: "brand-two",
-    name: "Advantage",
-    description: "Performance synthetic blends for active and outdoor use.",
-    image1: "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=1920&q=75",
-    image2: "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=1920&q=75",
+    name: "Vanilla Home",
+    link: "https://www.vanillahome.com.tr/",
+    description: "Durable and sustainable textiles for home goods.",
+    image1: "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=1920&q=75",
+    image2: "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=1920&q=75",
   },
   {
     id: "brand-three",
     name: "La Luxe",
+    link: "https://www.winbrellafabrics.com/",
     description: "Luxury silks and delicate fabrics for formal attire.",
     image1: "https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=1920&q=75",
     image2: "https://cdn.tuzemengroup.com/uploads/winbrella_sosyal_yeni_1_126_87d70ea499.JPG?w=1920&q=75",
   },
   {
     id: "brand-four",
-    name: "Vanilla Home",
-    description: "Durable and sustainable textiles for home goods.",
-    image1: "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=1920&q=75",
-    image2: "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=1920&q=75",
+    name: "Advantage",
+    link: "https://www.winbrellafabrics.com/",
+    description: "Performance synthetic blends for active and outdoor use.",
+    image1: "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=1920&q=75",
+    image2: "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=1920&q=75",
   },
 ]
 
@@ -129,12 +133,13 @@ export function OurBrands() {
                       {brand.description}
                     </p>
                     <div>
-                      <Link
-                        href={`#${brand.id}`}
+                      <a
+                        href={`${brand.link}`}
+                        target="_blank"
                         className="inline-flex items-center justify-center border border-white/50 bg-transparent px-10 py-4 text-sm font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
                       >
                         Explore Collection
-                      </Link>
+                      </a>
                     </div>
                   </div>
 

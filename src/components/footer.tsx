@@ -87,12 +87,12 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Tüzemen Group. All rights reserved.
           </p>
           <div className="mt-4 flex gap-6 sm:mt-0">
-            <Link href="#" className="text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground">
+            <a href="https://www.instagram.com/tuzemengroup/" target="_blank" className="text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground">
               Instagram
-            </Link>
-            <Link href="#" className="text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground">
+            </a>
+            <a href="https://tr.linkedin.com/company/tuzemen-textile" target="_blank" className="text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground">
               LinkedIn
-            </Link>
+            </a>
           </div>
         </div>
 
