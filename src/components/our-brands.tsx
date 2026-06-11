@@ -2,7 +2,12 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionTemplate,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Link from "next/link";
 
 const brands = [
@@ -55,16 +60,12 @@ export function OurBrands() {
     target: targetRef,
   });
 
-  const clipPath = useTransform(
+  const clipRadius = useTransform(
     scrollYProgress,
     [0, 0.15, 0.85, 1],
-    [
-      "circle(0% at 50% 50%)",
-      "circle(150% at 50% 50%)",
-      "circle(150% at 50% 50%)",
-      "circle(0% at 50% 50%)",
-    ],
+    ["0%", "150%", "150%", "0%"],
   );
+  const clipPath = useMotionTemplate`circle(${clipRadius} at 50% 50%)`;
 
   // Redistributed timing: Even 10% blocks for holding and moving
   const x = useTransform(
