@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, useInView, animate } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function AnimatedCounter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLParagraphElement>(null);
@@ -31,6 +32,8 @@ function AnimatedCounter({ to, suffix = "" }: { to: number; suffix?: string }) {
 }
 
 export function AboutUs() {
+  const t = useTranslations("AboutUs");
+
   return (
     <section id="about-us" className="bg-background py-24 md:py-32">
       <div className="container mx-auto px-4 md:px-8">
@@ -44,17 +47,13 @@ export function AboutUs() {
           >
             <div className="space-y-6">
               <h2 className="text-foreground text-3xl font-light tracking-widest uppercase md:text-4xl">
-                About Tüzemen Group
+                {t("title")}
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We produce high-quality fabrics for the global market. Our
-                manufacturing process blends traditional craftsmanship with
-                modern technology.
+                {t("paragraph1")}
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We manage a catalog of over 160 distinct designs. Our team
-                ensures every yard of fabric meets strict quality standards
-                before it reaches your business.
+                {t("paragraph2")}
               </p>
             </div>
 
@@ -62,13 +61,13 @@ export function AboutUs() {
               <div>
                 <AnimatedCounter to={160} suffix="+" />
                 <p className="text-muted-foreground mt-2 text-sm tracking-widest uppercase">
-                  Exclusive Designs
+                  {t("exclusiveDesigns")}
                 </p>
               </div>
               <div>
                 <AnimatedCounter to={3000} suffix="+" />
                 <p className="text-muted-foreground mt-2 text-sm tracking-widest uppercase">
-                  Satisfied Customers
+                  {t("satisfiedCustomers")}
                 </p>
               </div>
             </div>
@@ -84,7 +83,7 @@ export function AboutUs() {
             <div className="bg-muted relative aspect-4/5 overflow-hidden rounded-sm shadow-2xl">
               <Image
                 src="https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=1920&q=75"
-                alt="Tüzemen Group Manufacturing"
+                alt={t("imageAlt")}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"

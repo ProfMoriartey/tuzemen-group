@@ -1,0 +1,71 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "brands": "Brands",
+    "contact": "Contact",
+    "switchToEn": "EN",
+    "switchToTr": "TR"
+  },
+  "Hero": {
+    "slide1": {
+      "title": "Tüzemen Group",
+      "description": "Premium fabrics and textile manufacturing for international markets"
+    },
+    "slide2": {
+      "title": "Global Reach",
+      "description": "Exporting high-quality textiles to businesses worldwide"
+    },
+    "slide3": {
+      "title": "Modern Craftsmanship",
+      "description": "Blending traditional techniques with modern technology"
+    },
+    "slide4": {
+      "title": "Over 160 Designs",
+      "description": "A diverse catalog built to meet strict quality standards"
+    },
+    "exploreBrands": "Explore Brands"
+  },
+  "AboutUs": {
+    "title": "About Tüzemen Group",
+    "paragraph1": "We produce high-quality fabrics for the global market. Our manufacturing process blends traditional craftsmanship with modern technology.",
+    "paragraph2": "We manage a catalog of over 160 distinct designs. Our team ensures every yard of fabric meets strict quality standards before it reaches your business.",
+    "exclusiveDesigns": "Exclusive Designs",
+    "satisfiedCustomers": "Satisfied Customers",
+    "imageAlt": "Tüzemen Group Manufacturing"
+  },
+  "OurBrands": {
+    "title": "Our Brands",
+    "subtitle": "Discover our specialized textile collections",
+    "scrollHint": "Scroll to explore",
+    "exploreCollection": "Explore Collection",
+    "winbrella": {
+      "description": "Premium cotton and natural fibers for everyday wear."
+    },
+    "vanillaHome": {
+      "description": "Durable and sustainable textiles for home goods."
+    },
+    "laLuxe": {
+      "description": "Luxury silks and delicate fabrics for formal attire."
+    },
+    "advantage": {
+      "description": "Performance synthetic blends for active and outdoor use."
+    }
+  },
+  "Footer": {
+    "title": "Get in Touch",
+    "description": "Contact our sales team for international inquiries, catalog requests, or custom manufacturing details.",
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "message": "Your Message",
+    "sendMessage": "Send Message",
+    "contactDetails": "Contact Details",
+    "headquarters": "Headquarters",
+    "addressLine1": "SAMANLI MAHALLESİ SEL SOK B BLOK NO:67/F 16350 YILDIRIM",
+    "addressLine2": "BURSA/TURKEY",
+    "mapTitle": "Tüzemen Group Location",
+    "copyright": "Tüzemen Group. All rights reserved.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  }
+}

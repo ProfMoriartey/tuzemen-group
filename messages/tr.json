@@ -1,0 +1,71 @@
+{
+  "Navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "brands": "Markalar",
+    "contact": "İletişim",
+    "switchToEn": "EN",
+    "switchToTr": "TR"
+  },
+  "Hero": {
+    "slide1": {
+      "title": "Tüzemen Group",
+      "description": "Uluslararası pazarlar için premium kumaş ve tekstil üretimi"
+    },
+    "slide2": {
+      "title": "Küresel Erişim",
+      "description": "Dünya çapındaki işletmelere yüksek kaliteli tekstil ihracatı"
+    },
+    "slide3": {
+      "title": "Modern İşçilik",
+      "description": "Geleneksel teknikleri modern teknolojiyle birleştirme"
+    },
+    "slide4": {
+      "title": "160'tan Fazla Tasarım",
+      "description": "Sıkı kalite standartlarını karşılamak için oluşturulmuş çeşitli bir katalog"
+    },
+    "exploreBrands": "Markaları Keşfet"
+  },
+  "AboutUs": {
+    "title": "Tüzemen Group Hakkında",
+    "paragraph1": "Küresel pazar için yüksek kaliteli kumaşlar üretiyoruz. Üretim sürecimiz geleneksel işçiliği modern teknolojiyle birleştirir.",
+    "paragraph2": "160'tan fazla farklı tasarımdan oluşan bir katalog yönetiyoruz. Ekibimiz, her metrekare kumaşın işletmenize ulaşmadan önce sıkı kalite standartlarını karşılamasını sağlar.",
+    "exclusiveDesigns": "Özel Tasarımlar",
+    "satisfiedCustomers": "Memnun Müşteriler",
+    "imageAlt": "Tüzemen Group Üretim"
+  },
+  "OurBrands": {
+    "title": "Markalarımız",
+    "subtitle": "Özel tekstil koleksiyonlarımızı keşfedin",
+    "scrollHint": "Keşfetmek için kaydırın",
+    "exploreCollection": "Koleksiyonu Keşfet",
+    "winbrella": {
+      "description": "Günlük giyim için premium pamuk ve doğal elyaflar."
+    },
+    "vanillaHome": {
+      "description": "Ev tekstili için dayanıklı ve sürdürülebilir kumaşlar."
+    },
+    "laLuxe": {
+      "description": "Resmi giyim için lüks ipekler ve hassas kumaşlar."
+    },
+    "advantage": {
+      "description": "Aktif ve outdoor kullanım için performans sentetik karışımlar."
+    }
+  },
+  "Footer": {
+    "title": "İletişime Geçin",
+    "description": "Uluslararası talepler, katalog istekleri veya özel üretim detayları için satış ekibimizle iletişime geçin.",
+    "fullName": "Ad Soyad",
+    "email": "E-posta Adresi",
+    "message": "Mesajınız",
+    "sendMessage": "Mesaj Gönder",
+    "contactDetails": "İletişim Bilgileri",
+    "headquarters": "Merkez",
+    "addressLine1": "SAMANLI MAHALLESİ SEL SOK B BLOK NO:67/F 16350 YILDIRIM",
+    "addressLine2": "BURSA/TÜRKİYE",
+    "mapTitle": "Tüzemen Group Konumu",
+    "copyright": "Tüzemen Group. Tüm hakları saklıdır.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn"
+  }
+}

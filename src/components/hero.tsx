@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
+import { useTranslations } from "next-intl";
 import {
   Carousel,
   CarouselContent,
@@ -10,42 +11,20 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "~/components/ui/carousel";
-import Link from "next/link";
+import { Link } from "~/i18n/navigation";
+
+const slideKeys = ["slide1", "slide2", "slide3", "slide4"] as const;
+
+const slideImages = [
+  "https://cdn.tuzemengroup.com/uploads/winbrella_sosyal_yeni_1_126_87d70ea499.JPG?w=3840&q=75",
+  "https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=3840&q=75",
+  "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=3840&q=75",
+  "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=3840&q=75",
+];
 
 export function Hero() {
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
-
-  const slides = [
-    {
-      id: 1,
-      title: "Tüzemen Group",
-      description:
-        "Premium fabrics and textile manufacturing for international markets",
-      image:
-        "https://cdn.tuzemengroup.com/uploads/winbrella_sosyal_yeni_1_126_87d70ea499.JPG?w=3840&q=75",
-    },
-    {
-      id: 2,
-      title: "Global Reach",
-      description: "Exporting high-quality textiles to businesses worldwide",
-      image:
-        "https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=3840&q=75",
-    },
-    {
-      id: 3,
-      title: "Modern Craftsmanship",
-      description: "Blending traditional techniques with modern technology",
-      image:
-        "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=3840&q=75",
-    },
-    {
-      id: 4,
-      title: "Over 160 Designs",
-      description: "A diverse catalog built to meet strict quality standards",
-      image:
-        "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=3840&q=75",
-    },
-  ];
+  const t = useTranslations("Hero");
 
   return (
     <section className="bg-background relative w-full overflow-hidden">
@@ -56,16 +35,16 @@ export function Hero() {
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          {slides.map((slide) => (
-            <CarouselItem key={slide.id}>
+          {slideKeys.map((slideKey, index) => (
+            <CarouselItem key={slideKey}>
               <div className="relative flex min-h-dvh items-center justify-center">
                 <div className="absolute inset-0 z-0">
                   <Image
-                    src={slide.image}
-                    alt={slide.title}
+                    src={slideImages[index]!}
+                    alt={t(`${slideKey}.title`)}
                     fill
                     className="object-cover"
-                    priority={slide.id === 1}
+                    priority={index === 0}
                     sizes="100vw"
                     unoptimized
                   />
@@ -75,17 +54,17 @@ export function Hero() {
                 <div className="relative z-10 container mx-auto w-full px-4 text-center md:px-8">
                   <div className="mx-auto max-w-3xl">
                     <h1 className="mb-6 text-3xl font-light tracking-widest text-white uppercase md:text-4xl xl:text-5xl">
-                      {slide.title}
+                      {t(`${slideKey}.title`)}
                     </h1>
                     <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
-                      {slide.description}
+                      {t(`${slideKey}.description`)}
                     </p>
                     <div className="flex justify-center">
                       <Link
                         href="#our-brands"
                         className="inline-flex items-center justify-center border border-white/50 bg-transparent px-10 py-4 text-sm font-semibold tracking-widest text-white uppercase transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
                       >
-                        Explore Brands
+                        {t("exploreBrands")}
                       </Link>
                     </div>
                   </div>
