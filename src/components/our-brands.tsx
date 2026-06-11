@@ -17,19 +17,17 @@ const brands = [
     link: "https://www.winbrellafabrics.com/",
     description: "Premium cotton and natural fibers for everyday wear.",
     image1:
-      "https://cdn.tuzemengroup.com/uploads/winbrella_sosyal_yeni_1_126_87d70ea499.JPG?w=1920&q=75",
+      "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPhNiOQJGaQRsPhqgA9UVn0bCdmeYxWyJlfSrEN",
     image2:
-      "https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=1920&q=75",
+      "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPheUqCFnjfHnTOP2gQVUABrdsbDqM46wkyCRhi",
   },
   {
     id: "brand-two",
     name: "Vanilla Home",
     link: "https://www.vanillahome.com.tr/",
     description: "Durable and sustainable textiles for home goods.",
-    image1:
-      "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=1920&q=75",
-    image2:
-      "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=1920&q=75",
+    image1: "/vanilla1.jpg",
+    image2: "/vanilla2.jpg",
   },
   {
     id: "brand-three",
@@ -37,9 +35,9 @@ const brands = [
     link: "https://www.winbrellafabrics.com/",
     description: "Luxury silks and delicate fabrics for formal attire.",
     image1:
-      "https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=1920&q=75",
+      "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPhlmOAnsFkJ6Q13etX4AGoyzLIxnrPd8HEVKfR",
     image2:
-      "https://cdn.tuzemengroup.com/uploads/winbrella_sosyal_yeni_1_126_87d70ea499.JPG?w=1920&q=75",
+      "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPhKpxLreCMos1webTScCVuWf0Ahnjzt9dJXHI3",
   },
   {
     id: "brand-four",
@@ -47,9 +45,9 @@ const brands = [
     link: "https://www.winbrellafabrics.com/",
     description: "Performance synthetic blends for active and outdoor use.",
     image1:
-      "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=1920&q=75",
+      "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPh2EbSkq3XDxqNZ7AhUywFdtMn59iaO4WIQoSH",
     image2:
-      "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=1920&q=75",
+      "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPh1tHReGWwZb3cowg7WHKsNpLI9Yvn4lyVGdjA",
   },
 ];
 
