@@ -82,7 +82,7 @@ export function AboutUs() {
           >
             <div className="bg-muted relative aspect-4/5 overflow-hidden rounded-sm shadow-2xl">
               <Image
-                src="https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=1920&q=75"
+                src="https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPhSkAGdkGlAepZgKhRJ0O9iIXF2TjsB8bnztQk"
                 alt={t("imageAlt")}
                 fill
                 className="object-cover"

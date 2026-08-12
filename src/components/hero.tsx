@@ -16,10 +16,10 @@ import { Link } from "~/i18n/navigation";
 const slideKeys = ["slide1", "slide2", "slide3", "slide4"] as const;
 
 const slideImages = [
-  "https://cdn.tuzemengroup.com/uploads/winbrella_sosyal_yeni_1_126_87d70ea499.JPG?w=3840&q=75",
-  "https://cdn.tuzemengroup.com/uploads/DSC_3212_5796bdce25.jpg?w=3840&q=75",
-  "https://cdn.tuzemengroup.com/uploads/DBBC_9725_Kopya_26268c3a4c.JPG?w=3840&q=75",
-  "https://cdn.tuzemengroup.com/uploads/DSC_3037_9456a8533d.jpg?w=3840&q=75",
+  "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPhuXIMLDVYqsQfpLjkoJXCi8V1Ky5mNaMeBdP0",
+  "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPh7GJg4yNrWkgGZO4wUJt2omynxPcAsRl7KXHb",
+  "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPhp1yKHLJjlB2wLGIF3kdTxWYf6KiQZJ5ARmrU",
+  "https://0m7zywkdga.ufs.sh/f/NvuvlEaQRsPhuRRluwmVYqsQfpLjkoJXCi8V1Ky5mNaMeBdP",
 ];
 
 export function Hero() {
